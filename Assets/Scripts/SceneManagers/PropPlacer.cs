@@ -8,17 +8,7 @@ public class PropPlacer : MonoBehaviour
 {
     List<AssetReferenceGameObject> loadedProps = new List<AssetReferenceGameObject>();
 
-    [SerializeField] PropReaction TestProp;
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            PlaceProp(TestProp);
-        }
-    }
-
-    public void PlaceProp(PropReaction reaction)
+    public void PlaceProp(SpawnableReaction reaction)
     {
         loadedProps.Add(reaction.propReference);
 

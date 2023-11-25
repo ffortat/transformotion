@@ -8,18 +8,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 public class CameraChanger : MonoBehaviour
 {
     [SerializeField] Camera _camera;
-
     AssetReference currentSkybox;
-
-    public CameraReaction TestCam;
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            Apply(TestCam);
-        }
-    }
 
     public void Apply(CameraReaction reaction)
     {

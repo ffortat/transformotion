@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,24 @@ using UnityEngine.AddressableAssets;
 
 public abstract class KeywordReaction : ScriptableObject
 {
-    KeywordContext context;
-
-    public void CheckContext()
-    {
-
-    }
+    public KeywordContext context;
 }
-
-struct KeywordContext
+[System.Serializable]
+public struct KeywordContext
 {
-    AssetReference currentLocation;
+    public AssetReference currentLocation;
+
+    public override bool Equals(object obj)
+    {
+        return obj is KeywordContext context && context.currentLocation.AssetGUID == currentLocation.AssetGUID;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(currentLocation);
+    }
+    public bool IsInitialized()
+    {
+        return currentLocation != null;
+    }
 }

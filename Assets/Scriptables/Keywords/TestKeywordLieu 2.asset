@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bfe68b050dc8eb42bf40a40e8bc2a6a, type: 3}
-  m_Name: TestCamera
+  m_Script: {fileID: 11500000, guid: b2c947217f8512b4a86afc6cd01e6c4c, type: 3}
+  m_Name: TestKeywordLieu 2
   m_EditorClassIdentifier: 
-  context: []
-  cameraFov: -1
-  skybox:
-    m_AssetGUID: d6ae44ff8913405409b61351c6788c87
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
+  keywordReaction: []
+  defaultReaction: {fileID: 11400000, guid: 97939ce000f9e6b4f9f8308f688b004a, type: 2}
