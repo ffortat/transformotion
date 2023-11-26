@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,6 +50,10 @@ public class GameManager : MonoBehaviour
         if(!keywordManager.IsDone())
         {
             StartCoroutine(WaitForNextKeyword());
+        }
+        else
+        {
+            uiManager.ShowReset();
         }
     }
 
@@ -114,5 +119,10 @@ public class GameManager : MonoBehaviour
         {
             postProcessController.ApplyProfile(reaction);
         }
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

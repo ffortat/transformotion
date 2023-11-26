@@ -132,11 +132,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 57ac462c6177bab4e830fc7c8b75e4bb
-    m_Address: Assets/Scriptables/Reactions/Magique
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5dfa02f0f9c28ec4884118035fb83b53
     m_Address: Assets/Prefabs/AddressableProps/MagicalLightForest.prefab
     m_ReadOnly: 0
@@ -199,6 +194,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 762f22ba43541df4e95e0e7126e8d96c
     m_Address: Assets/SkySeries Freebie/FreebieHdri/DarkStorm4K.hdr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 412a2f020e2b07448a13587ca1824541
+    m_Address: Assets/Prefabs/Skybox/MountainSkybox.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
