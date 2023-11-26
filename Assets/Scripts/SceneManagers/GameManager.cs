@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] CameraChanger cameraChanger;
     [SerializeField] PostProcessController postProcessController;
     [SerializeField] KeywordManager keywordManager;
+    [SerializeField] UIManager uiManager;
 
 
     List<Keyword> chosenKeywords = new List<Keyword>();
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(waitTime);
 
         var keywords = keywordManager.GetNextKeywords(currentKeywordContext.currentLocation != null);
-        KeywordSelected(keywords[UnityEngine.Random.Range(0, keywords.Count)]);
+        uiManager.DisplayKeywords(keywords, KeywordSelected);
     }
 
     public void KeywordSelected(Keyword keywordSelected)
