@@ -14,9 +14,9 @@ public class AudioManager : MonoBehaviour
 	private bool _isAmbianceMusicChangeOnGoing = false;
 
 	void Awake()
-    {
-        Instance = this;
-    }
+	{
+		Instance = this;
+	}
 
 	public IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
 	{
