@@ -12,7 +12,7 @@ public class KeywordManagerEditor : Editor
         KeywordManager myScript = (KeywordManager)target;
         if (GUILayout.Button("Get Keywords"))
         {
-            myScript.GetKeywords();
+            //myScript.GetKeywords();
         }
     }
 }

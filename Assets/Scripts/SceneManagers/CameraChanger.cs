@@ -7,14 +7,13 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class CameraChanger : MonoBehaviour
 {
-    [SerializeField] Camera _camera;
     AssetReference currentSkybox;
 
     public void Apply(CameraReaction reaction)
     {
         if(reaction.cameraFov >0)
         {
-            _camera.fieldOfView = reaction.cameraFov;
+            Camera.main.fieldOfView = reaction.cameraFov;
         }
         if(reaction.skybox != null)
         {
@@ -34,7 +33,7 @@ public class CameraChanger : MonoBehaviour
     {
         if(handle.IsDone && handle.Status == AsyncOperationStatus.Succeeded)
         {
-            _camera.GetComponent<Skybox>().material = (Material)currentSkybox.Asset;
+            Camera.main.GetComponent<Skybox>().material = (Material)currentSkybox.Asset;
         }
     }
 

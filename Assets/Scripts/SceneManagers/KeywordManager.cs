@@ -2,9 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
 public class KeywordManager : MonoBehaviour
 {
@@ -39,11 +36,4 @@ public class KeywordManager : MonoBehaviour
     {
         return wordCount == wordCountTotal;
     }
-
-#if UNITY_EDITOR
-    public void GetKeywords()
-    {
-        Debug.Log(AssetDatabase.LoadAllAssetsAtPath("Assets/Scriptables/Keywords/LocationKeywords/").ToString());
-    }
-#endif
 }

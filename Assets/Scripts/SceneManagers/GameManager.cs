@@ -25,19 +25,13 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(waitTime);
 
-        keywordManager.GetNextKeywords(currentKeywordContext.currentLocation != null);
+        var keywords = keywordManager.GetNextKeywords(currentKeywordContext.currentLocation != null);
+        KeywordSelected(keywords[UnityEngine.Random.Range(0, keywords.Count)]);
     }
 
     public void KeywordSelected(Keyword keywordSelected)
     {
-        if(currentKeywordContext.IsInitialized())
-        {
-            if (!CheckKeywordValidityInContext(keywordSelected))
-            {
-                Debug.LogError("Invalid keyword in current context. No reaction found.");
-                return;
-            }
-        }
+        Debug.Log("Selected : " + keywordSelected.name);
 
         KeywordReaction reaction = keywordSelected.GetReaction(currentKeywordContext);
         ApplyReaction(reaction);
