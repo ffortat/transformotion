@@ -75,10 +75,11 @@ public class GameManager : MonoBehaviour
         if (reaction as LocationReaction != null)
         {
             currentKeywordContext.currentLocation = ((SpawnableReaction)reaction).propReference;
-            wasContextUpdated = true;
+			StartCoroutine(AudioManager.Instance.ChangeAmbianceMusic(((LocationReaction)reaction).ambianceMusic));
+			wasContextUpdated = true;
             Apply((SpawnableReaction)reaction);
         }
-        if (reaction as PropReaction != null)
+        else if (reaction as PropReaction != null)
         {
             Apply((SpawnableReaction)reaction);
         }
