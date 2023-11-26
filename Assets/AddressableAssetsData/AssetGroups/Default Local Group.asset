@@ -92,6 +92,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7d6982f40b5593438087d167a7a195a
+    m_Address: Assets/Prefabs/Locations/Inside.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0ee6cac293e2c044a41bd3c74040556
+    m_Address: Assets/Prefabs/Locations/Forest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e2ecab3f1b02dbb468b241b9803e671a, type: 2}
   m_SchemaSet:

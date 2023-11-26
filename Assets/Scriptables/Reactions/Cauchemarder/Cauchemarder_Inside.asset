@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context:
     currentLocation:
-      m_AssetGUID: 
+      m_AssetGUID: d7d6982f40b5593438087d167a7a195a
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
