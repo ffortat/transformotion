@@ -843,9 +843,10 @@ GameObject:
   - component: {fileID: 665285502}
   - component: {fileID: 665285504}
   - component: {fileID: 665285505}
+  - component: {fileID: 665285507}
   - component: {fileID: 665285506}
   m_Layer: 0
-  m_Name: Test
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,6 +920,27 @@ MonoBehaviour:
   propPlacer: {fileID: 665285502}
   cameraChanger: {fileID: 665285504}
   postProcessController: {fileID: 665285505}
+  keywordManager: {fileID: 665285507}
+--- !u!114 &665285507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665285501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80a77bf035f122040afc848d99a321f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keywords:
+  - {fileID: 11400000, guid: 1692e49e4758938469aff80a26fa31b3, type: 2}
+  - {fileID: 11400000, guid: 184b0f095e1bb8d49866201a09a15b34, type: 2}
+  locationKeywords:
+  - {fileID: 11400000, guid: e5275e5b46d5d434d8d82b5c92050876, type: 2}
+  - {fileID: 11400000, guid: ffe8f7723a002de408ef60b0af94b406, type: 2}
+  - {fileID: 11400000, guid: 3ebc75fbec5391840b7a808be8e32bd2, type: 2}
+  wordCountTotal: 10
 --- !u!1 &950414721
 GameObject:
   m_ObjectHideFlags: 0

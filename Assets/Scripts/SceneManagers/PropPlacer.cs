@@ -8,23 +8,45 @@ public class PropPlacer : MonoBehaviour
 {
     List<AssetReferenceGameObject> loadedProps = new List<AssetReferenceGameObject>();
 
+    [SerializeField] Transform PropParent;
+
     public void PlaceProp(SpawnableReaction reaction)
     {
+        if(loadedProps.Find(x => x.AssetGUID == reaction.propReference.AssetGUID) != null)
+        {
+            return;
+        }
+
         loadedProps.Add(reaction.propReference);
 
         AsyncOperationHandle handle = reaction.propReference.LoadAssetAsync<GameObject>();
-        handle.Completed += (AsyncOperationHandle x) => { Handle_Completed(x, reaction.position, reaction.rotation); };
+        handle.Completed += Handle_Completed;
     }
 
-    private void Handle_Completed(AsyncOperationHandle handle, Vector3 position, Quaternion rotation)
+    private void Handle_Completed(AsyncOperationHandle handle)
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
-            Instantiate((GameObject)handle.Result, position, rotation);
+            Instantiate((GameObject)handle.Result, PropParent);
         }
         else
         {
             Debug.LogError("AssetReference failed to load.");
+        }
+    }
+
+    private void RemoveProp(SpawnableReaction previousReaction)
+    {
+        int referenceIndex = loadedProps.FindIndex(x => x.AssetGUID == previousReaction.propReference.AssetGUID);
+        if(referenceIndex != -1)
+        {
+            AssetReferenceGameObject reference = loadedProps[referenceIndex];
+            
+        loadedProps.Remove(reference);
+        if (reference != null)
+        {
+            reference.ReleaseAsset();
+        }
         }
     }
 

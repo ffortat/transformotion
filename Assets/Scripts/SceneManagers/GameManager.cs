@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,8 +8,25 @@ public class GameManager : MonoBehaviour
     [SerializeField] PropPlacer propPlacer;
     [SerializeField] CameraChanger cameraChanger;
     [SerializeField] PostProcessController postProcessController;
+    [SerializeField] KeywordManager keywordManager;
+
+
+    List<Keyword> chosenKeywords = new List<Keyword>();
 
     KeywordContext currentKeywordContext;
+    bool wasContextUpdated = false;
+
+    private void Start()
+    {
+        StartCoroutine(WaitForNextKeyword());
+    }
+
+    IEnumerator WaitForNextKeyword(float waitTime = 5.0f)
+    {
+        yield return new WaitForSecondsRealtime(waitTime);
+
+        keywordManager.GetNextKeywords(currentKeywordContext.currentLocation != null);
+    }
 
     public void KeywordSelected(Keyword keywordSelected)
     {
@@ -22,9 +40,48 @@ public class GameManager : MonoBehaviour
         }
 
         KeywordReaction reaction = keywordSelected.GetReaction(currentKeywordContext);
-        if( reaction as LocationReaction != null)
+        ApplyReaction(reaction);
+
+        /*
+        if(wasContextUpdated)
+        {
+            foreach (var keyword in chosenKeywords)
+            {
+                UpdateReactions();
+            }
+            wasContextUpdated = false;
+        }*/
+
+        if(!keywordManager.IsDone())
+        {
+            StartCoroutine(WaitForNextKeyword());
+        }
+    }
+
+    void UpdateReactions()
+    {
+        foreach (var keyword in chosenKeywords)
+        {
+            if(keyword.keywordReaction.Count == 0)
+            {
+                continue;
+            }
+            KeywordReaction reaction = keyword.GetReaction(currentKeywordContext);
+            ApplyReaction(reaction);
+        }
+    }
+
+    bool CheckKeywordValidityInContext(Keyword keyword)
+    {
+        return keyword.IsValidInContext(currentKeywordContext);
+    }
+
+    void ApplyReaction(KeywordReaction reaction)
+    {
+        if (reaction as LocationReaction != null)
         {
             currentKeywordContext.currentLocation = ((SpawnableReaction)reaction).propReference;
+            wasContextUpdated = true;
             Apply((SpawnableReaction)reaction);
         }
         if (reaction as PropReaction != null)
@@ -41,12 +98,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    bool CheckKeywordValidityInContext(Keyword keyword)
-    {
-        return keyword.IsValidInContext(currentKeywordContext);
-    }
-
-    void Apply(SpawnableReaction reaction)
+    void Apply(SpawnableReaction reaction, SpawnableReaction previousReaction = null)
     {
         if(propPlacer != null)
         {
