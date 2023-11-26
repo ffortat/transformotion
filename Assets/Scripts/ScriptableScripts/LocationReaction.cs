@@ -4,4 +4,6 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "LocationReaction", menuName = "ScriptableObjects/LocationReaction")]
 public class LocationReaction : SpawnableReaction
-{}
+{
+	public AudioClip ambianceMusic;
+}
