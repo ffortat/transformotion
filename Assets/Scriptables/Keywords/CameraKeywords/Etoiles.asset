@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Etoiles
   m_EditorClassIdentifier: 
   keywordName: Etoiles
-  keywordReaction:
-  - {fileID: 11400000, guid: a643ec9784da1cc449186a20b1738ed1, type: 2}
-  defaultReaction: {fileID: 11400000, guid: 03abc9edfee42cf4799c19fe1fd85a50, type: 2}
+  keywordReaction: []
+  defaultReaction: {fileID: 11400000, guid: a643ec9784da1cc449186a20b1738ed1, type: 2}

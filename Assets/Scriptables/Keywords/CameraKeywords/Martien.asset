@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Martien
   m_EditorClassIdentifier: 
   keywordName: Martien
-  keywordReaction:
-  - {fileID: 11400000, guid: 87467ab81c8b4ec46abbc7f284b2bb52, type: 2}
-  defaultReaction: {fileID: 11400000, guid: 03abc9edfee42cf4799c19fe1fd85a50, type: 2}
+  keywordReaction: []
+  defaultReaction: {fileID: 11400000, guid: 87467ab81c8b4ec46abbc7f284b2bb52, type: 2}

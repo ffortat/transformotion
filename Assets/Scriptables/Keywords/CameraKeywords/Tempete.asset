@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Tempete
   m_EditorClassIdentifier: 
   keywordName: "Temp\xEAte"
-  keywordReaction:
-  - {fileID: 11400000, guid: 03abc9edfee42cf4799c19fe1fd85a50, type: 2}
+  keywordReaction: []
   defaultReaction: {fileID: 11400000, guid: 03abc9edfee42cf4799c19fe1fd85a50, type: 2}

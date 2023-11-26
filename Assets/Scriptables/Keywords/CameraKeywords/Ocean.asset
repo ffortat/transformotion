@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Ocean
   m_EditorClassIdentifier: 
   keywordName: "Oc\xE9an"
-  keywordReaction:
-  - {fileID: 11400000, guid: 3b457e242e7b08d4cb5540628675e8f2, type: 2}
-  defaultReaction: {fileID: 11400000, guid: 03abc9edfee42cf4799c19fe1fd85a50, type: 2}
+  keywordReaction: []
+  defaultReaction: {fileID: 11400000, guid: 3b457e242e7b08d4cb5540628675e8f2, type: 2}
