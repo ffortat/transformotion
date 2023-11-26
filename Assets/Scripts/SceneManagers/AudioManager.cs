@@ -10,7 +10,8 @@ public class AudioManager : MonoBehaviour
 	[SerializeField]
 	private float standardFadeDuration = 1.0f;
 
-	private bool _isMainMusicFadeOnGoing = false;
+	private bool _isMusicFadingGoingOn = false;
+	private bool _isAmbianceMusicChangeOnGoing = false;
 
 	void Awake()
     {
@@ -19,8 +20,7 @@ public class AudioManager : MonoBehaviour
 
 	public IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
 	{
-		_isMainMusicFadeOnGoing = true;
-
+		_isMusicFadingGoingOn = true;
 		float startVolume = audioSource.volume;
 		while (audioSource.volume > 0)
 		{
@@ -30,13 +30,12 @@ public class AudioManager : MonoBehaviour
 
 		audioSource.Stop();
 		audioSource.volume = startVolume;
-
-		_isMainMusicFadeOnGoing = false;
+		_isMusicFadingGoingOn = false;
 	}
 
 	public IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
 	{
-		_isMainMusicFadeOnGoing = true;
+		_isMusicFadingGoingOn = true;
 		audioSource.volume = 0.01f;
 		audioSource.Play();
 		while (audioSource.volume < 1.0f)
@@ -44,14 +43,13 @@ public class AudioManager : MonoBehaviour
 			audioSource.volume += audioSource.volume * Time.deltaTime / FadeTime;
 			yield return null;
 		}
-
-		_isMainMusicFadeOnGoing = false;
+		_isMusicFadingGoingOn = false;
 	}
 
-	public bool ToggleMainMusic()
+	public void ToggleMainMusic()
     {
-		if (mainMusicAudioSource == null || _isMainMusicFadeOnGoing)
-			return false;
+		if (_isMusicFadingGoingOn || mainMusicAudioSource == null)
+			return;
 
 		if (mainMusicAudioSource.isPlaying)
 		{
@@ -61,7 +59,17 @@ public class AudioManager : MonoBehaviour
 		{
 			StartCoroutine(FadeIn(mainMusicAudioSource, standardFadeDuration));
 		}
+	}
 
-		return true;
+	public IEnumerator ChangeAmbianceMusic(AudioClip newAmbiance)
+	{
+		if (!_isAmbianceMusicChangeOnGoing && newAmbiance != null && mainMusicAudioSource.clip.name != newAmbiance.name)
+		{
+			_isAmbianceMusicChangeOnGoing = true;
+			yield return StartCoroutine(FadeOut(mainMusicAudioSource, standardFadeDuration));
+			mainMusicAudioSource.clip = newAmbiance;
+			yield return StartCoroutine(FadeIn(mainMusicAudioSource, standardFadeDuration));
+			_isAmbianceMusicChangeOnGoing = false;
+		}
 	}
 }

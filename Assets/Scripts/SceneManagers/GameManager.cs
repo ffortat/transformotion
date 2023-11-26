@@ -22,12 +22,13 @@ public class GameManager : MonoBehaviour
         }
 
         KeywordReaction reaction = keywordSelected.GetReaction(currentKeywordContext);
-        if( reaction as LocationReaction != null)
+        if (reaction as LocationReaction != null)
         {
             currentKeywordContext.currentLocation = ((SpawnableReaction)reaction).propReference;
-            Apply((SpawnableReaction)reaction);
+            StartCoroutine(AudioManager.Instance.ChangeAmbianceMusic(((LocationReaction)reaction).ambianceMusic));
+			Apply((SpawnableReaction)reaction);
         }
-        if (reaction as PropReaction != null)
+        else if (reaction as PropReaction != null)
         {
             Apply((SpawnableReaction)reaction);
         }

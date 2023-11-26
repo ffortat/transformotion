@@ -25,3 +25,4 @@ MonoBehaviour:
     m_EditorAssetChanged: 0
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 0}
+  ambianceMusic: {fileID: 8300000, guid: ff474957112335645868feecd54e2e44, type: 3}
