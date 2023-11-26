@@ -9,6 +9,8 @@ public class CameraChanger : MonoBehaviour
 {
     AssetReference currentSkybox;
 
+    [SerializeField] Camera cam;
+
     public void Apply(CameraReaction reaction)
     {
         if(reaction.cameraFov >0)
@@ -33,7 +35,8 @@ public class CameraChanger : MonoBehaviour
     {
         if(handle.IsDone && handle.Status == AsyncOperationStatus.Succeeded)
         {
-            Camera.main.GetComponent<Skybox>().material = (Material)currentSkybox.Asset;
+            cam.clearFlags = CameraClearFlags.Skybox;
+            cam.gameObject.GetComponent<Skybox>().material = (Material)currentSkybox.Asset;
         }
     }
 
