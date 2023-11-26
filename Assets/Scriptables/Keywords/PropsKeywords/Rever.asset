@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Rever
   keywordReaction:
   - {fileID: 11400000, guid: f00389fdec747c447aa323aaf4eb7414, type: 2}
+  - {fileID: 11400000, guid: 2995c7d978b202b408ee0ada8dadee9b, type: 2}
   defaultReaction: {fileID: 11400000, guid: f00389fdec747c447aa323aaf4eb7414, type: 2}

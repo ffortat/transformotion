@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Cauchemarder
   keywordReaction:
   - {fileID: 11400000, guid: e75157421d72cdf4db76e7d8a69cf650, type: 2}
+  - {fileID: 11400000, guid: 18db74b3ccbc02e44a9334e0bd33710f, type: 2}
   defaultReaction: {fileID: 11400000, guid: e75157421d72cdf4db76e7d8a69cf650, type: 2}

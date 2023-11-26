@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Eclairer
   keywordReaction:
   - {fileID: 11400000, guid: 743525e30bf2fd24ab5635becbc8db4e, type: 2}
+  - {fileID: 11400000, guid: 33679b92b0e050641aaf1b659f85afc1, type: 2}
   defaultReaction: {fileID: 11400000, guid: 743525e30bf2fd24ab5635becbc8db4e, type: 2}

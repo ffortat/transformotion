@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Boire
   keywordReaction:
   - {fileID: 11400000, guid: 557cce032b8c01347a0ff2fc08d810b8, type: 2}
+  - {fileID: 11400000, guid: cb55dcbca19c58f4f893bfe689c78f19, type: 2}
   defaultReaction: {fileID: 11400000, guid: 557cce032b8c01347a0ff2fc08d810b8, type: 2}

@@ -39,9 +39,4 @@ public class Keyword : ScriptableObject
 
         return defaultReaction;
     }
-
-    internal void UpdateReaction()
-    {
-        throw new NotImplementedException();
-    }
 }

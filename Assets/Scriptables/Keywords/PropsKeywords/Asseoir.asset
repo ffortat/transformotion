@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Asseoir
   keywordReaction:
   - {fileID: 11400000, guid: d7be4affe67d2f644940a74e806d9a74, type: 2}
+  - {fileID: 11400000, guid: 1970ee813d113c64599db0ce8796f788, type: 2}
   defaultReaction: {fileID: 11400000, guid: d7be4affe67d2f644940a74e806d9a74, type: 2}

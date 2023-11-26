@@ -17,28 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 685ee13d72170864ab08797b025dc4ca
   m_SerializeEntries:
-  - m_GUID: 5ddb2018e438a8349a2617907e7db040
-    m_Address: Assets/Prefabs/TestCube.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d6ae44ff8913405409b61351c6788c87
     m_Address: Assets/Polygon/PolygonSciFiWorlds/Materials/Misc/SkyBoxSpace.mat
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3004c4b55849b724fb3e3dbd4aa32898
-    m_Address: Assets/Prefabs/Test/TestCube 2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5c15af999cbc9fd4aa7b1c4b2636a539
-    m_Address: Assets/Prefabs/Test/TestLocation1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d8a213d5eb8c7b949b41b100c6ae2ea0
-    m_Address: Assets/Prefabs/Test/TestLocation2.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -99,6 +79,91 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f0ee6cac293e2c044a41bd3c74040556
     m_Address: Assets/Prefabs/Locations/Forest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28fbf8d2d91ffee41ab5f957dc7bb9fd
+    m_Address: Assets/Prefabs/AddressableProps/Flowers.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 554ea445ede0be941a435e00b1ea575d
+    m_Address: Assets/Prefabs/AddressableProps/Heart_Rocks.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a42836a62df77241b477244166a19d7
+    m_Address: Assets/Prefabs/AddressableProps/Mushrooms.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82e353dd245e7584a82a2ec51950e571
+    m_Address: Assets/Prefabs/AddressableProps/Picnic_Table.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0c0d2d5a28812e4bb2ab9cfb5000cf6
+    m_Address: Assets/Prefabs/AddressableProps/Roadsign.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d490834ffda265448beb1d182bc803ba
+    m_Address: Assets/Prefabs/AddressableProps/Rock_Bed.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e19cc171ecce3a9479cc470e28031453
+    m_Address: Assets/Prefabs/AddressableProps/Skull.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01bc1bc760c34ea4ba96ebdced64be3f
+    m_Address: Assets/Prefabs/AddressableProps/Well.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d21588275bcf3ae46b98897aa7eff45b
+    m_Address: Assets/Prefabs/AddressableProps/Tree_Stump.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07fdf586645ccde428c5ceda98f6aca8
+    m_Address: Assets/Prefabs/AddressableProps/Campfire.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57ac462c6177bab4e830fc7c8b75e4bb
+    m_Address: Assets/Scriptables/Reactions/Magique
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5dfa02f0f9c28ec4884118035fb83b53
+    m_Address: Assets/Prefabs/AddressableProps/MagicalLightForest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f658084f683497944928085334bafdd0
+    m_Address: Assets/Prefabs/AddressableProps/HorrorForestLIght.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e60b248fe773734ba1671ef9783f530
+    m_Address: Assets/Prefabs/AddressableProps/MagicalLightInside.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f93e5f0dd70119449a507af3e47d26c
+    m_Address: Assets/Prefabs/AddressableProps/Directional Light (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9d5bdc007ec4ce48b35d8c173df8e74
+    m_Address: Assets/Prefabs/AddressableProps/CalmLightForest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96c55d55e5356b749bee2f2269190020
+    m_Address: Assets/Prefabs/AddressableProps/CalmLightInside.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
