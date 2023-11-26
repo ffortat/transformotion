@@ -662,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 2987636898506113421, guid: 01bc1bc760c34ea4ba96ebdced64be3f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2987636898506113421, guid: 01bc1bc760c34ea4ba96ebdced64be3f,
         type: 3}
@@ -862,6 +862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flowers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940656625258355715, guid: 28fbf8d2d91ffee41ab5f957dc7bb9fd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.861
       objectReference: {fileID: 0}
     - target: {fileID: 8363447303333348209, guid: 28fbf8d2d91ffee41ab5f957dc7bb9fd,
         type: 3}
