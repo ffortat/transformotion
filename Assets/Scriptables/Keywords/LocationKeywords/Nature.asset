@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Nature
   m_EditorClassIdentifier: 
   keywordName: Nature
-  keywordReaction:
-  - {fileID: 11400000, guid: bd9d190349b276b4eb9c75c7e668de26, type: 2}
+  keywordReaction: []
   defaultReaction: {fileID: 11400000, guid: bd9d190349b276b4eb9c75c7e668de26, type: 2}

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Culture
   m_EditorClassIdentifier: 
   keywordName: Culture
-  keywordReaction:
-  - {fileID: 11400000, guid: 1cdedde41ced5f74ea5d187784c2f492, type: 2}
-  defaultReaction: {fileID: 11400000, guid: bd9d190349b276b4eb9c75c7e668de26, type: 2}
+  keywordReaction: []
+  defaultReaction: {fileID: 11400000, guid: 1cdedde41ced5f74ea5d187784c2f492, type: 2}

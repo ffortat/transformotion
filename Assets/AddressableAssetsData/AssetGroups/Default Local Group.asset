@@ -17,28 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 685ee13d72170864ab08797b025dc4ca
   m_SerializeEntries:
-  - m_GUID: 5ddb2018e438a8349a2617907e7db040
-    m_Address: Assets/Prefabs/TestCube.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d6ae44ff8913405409b61351c6788c87
     m_Address: Assets/Polygon/PolygonSciFiWorlds/Materials/Misc/SkyBoxSpace.mat
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3004c4b55849b724fb3e3dbd4aa32898
-    m_Address: Assets/Prefabs/Test/TestCube 2.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5c15af999cbc9fd4aa7b1c4b2636a539
-    m_Address: Assets/Prefabs/Test/TestLocation1.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d8a213d5eb8c7b949b41b100c6ae2ea0
-    m_Address: Assets/Prefabs/Test/TestLocation2.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

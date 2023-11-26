@@ -26,9 +26,11 @@ public class KeywordManager : MonoBehaviour
         for( int i = 0; i < wordCountToGive; i++ ) 
         {
             int pick = UnityEngine.Random.Range(0, keywords.Count);
+            Debug.Log("pick : " + pick + " count : " +  keywords.Count);
             result.Add(keywords[pick]);
             keywords.RemoveAt(pick);
         }
+        wordCount++;
         return result;
     }
 
