@@ -167,6 +167,41 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a01751eccaffaad40b985adf18a8a0d1
+    m_Address: Assets/Polygon/PolygonSciFiWorlds/Textures/Misc/Skybox/PolygonSciFiWorlds_Skybox_01_Back.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2039a0ad0a9d05549928b70362f54902
+    m_Address: Assets/SkySeries Freebie/DarkStorm.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 119ec07f1c7ed204db46bd8465fd5a50
+    m_Address: Assets/SkySeries Freebie/UnderTheSea4k.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d133deeaa66ed445853e946ff25e073
+    m_Address: Assets/SkySeries Freebie/UnearthlyRed.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26cddb2a3a1bc804d8e9ca09b109793a
+    m_Address: Assets/SkySeries Freebie/FreebieHdri/UnderTheSea4k.hdr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3de28b69b48944438c87668bd722ae7
+    m_Address: Assets/SkySeries Freebie/FreebieHdri/UnearthlyRed4k.hdr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 762f22ba43541df4e95e0e7126e8d96c
+    m_Address: Assets/SkySeries Freebie/FreebieHdri/DarkStorm4K.hdr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e2ecab3f1b02dbb468b241b9803e671a, type: 2}
   m_SchemaSet:
