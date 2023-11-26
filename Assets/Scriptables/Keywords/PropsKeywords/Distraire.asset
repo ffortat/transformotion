@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Distraire
   keywordReaction:
   - {fileID: 11400000, guid: b3ebfebb05b67564da719e43a06b659e, type: 2}
+  - {fileID: 11400000, guid: b345eff51fb13584b90daead3f72288b, type: 2}
   defaultReaction: {fileID: 11400000, guid: b3ebfebb05b67564da719e43a06b659e, type: 2}

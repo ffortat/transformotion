@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Germer
   keywordReaction:
   - {fileID: 11400000, guid: eb61e2aef9dcdef49929add716dc0964, type: 2}
+  - {fileID: 11400000, guid: ffac5f1c16039a64d86a71031a637028, type: 2}
   defaultReaction: {fileID: 11400000, guid: eb61e2aef9dcdef49929add716dc0964, type: 2}

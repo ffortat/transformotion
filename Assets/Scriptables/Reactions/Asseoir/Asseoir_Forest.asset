@@ -9,11 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3d6f7c6dd9afc419dc4dfb60d2f978, type: 3}
-  m_Name: TestLoc 1
+  m_Script: {fileID: 11500000, guid: 13510313d8a5947419b2d39e95e191fb, type: 3}
+  m_Name: Asseoir_Forest
   m_EditorClassIdentifier: 
+  context:
+    currentLocation:
+      m_AssetGUID: f0ee6cac293e2c044a41bd3c74040556
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
   propReference:
-    m_AssetGUID: 5c15af999cbc9fd4aa7b1c4b2636a539
+    m_AssetGUID: d21588275bcf3ae46b98897aa7eff45b
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

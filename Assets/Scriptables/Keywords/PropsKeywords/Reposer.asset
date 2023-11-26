@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Reposer
   keywordReaction:
   - {fileID: 11400000, guid: eee721a62bc5583418a1320987d89861, type: 2}
+  - {fileID: 11400000, guid: 06095746c2e57e74688547571a922ce3, type: 2}
   defaultReaction: {fileID: 11400000, guid: eee721a62bc5583418a1320987d89861, type: 2}

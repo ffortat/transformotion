@@ -102,6 +102,56 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28fbf8d2d91ffee41ab5f957dc7bb9fd
+    m_Address: Assets/Prefabs/AddressableProps/Flowers.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 554ea445ede0be941a435e00b1ea575d
+    m_Address: Assets/Prefabs/AddressableProps/Heart_Rocks.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a42836a62df77241b477244166a19d7
+    m_Address: Assets/Prefabs/AddressableProps/Mushrooms.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82e353dd245e7584a82a2ec51950e571
+    m_Address: Assets/Prefabs/AddressableProps/Picnic_Table.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0c0d2d5a28812e4bb2ab9cfb5000cf6
+    m_Address: Assets/Prefabs/AddressableProps/Roadsign.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d490834ffda265448beb1d182bc803ba
+    m_Address: Assets/Prefabs/AddressableProps/Rock_Bed.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e19cc171ecce3a9479cc470e28031453
+    m_Address: Assets/Prefabs/AddressableProps/Skull.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01bc1bc760c34ea4ba96ebdced64be3f
+    m_Address: Assets/Prefabs/AddressableProps/Well.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d21588275bcf3ae46b98897aa7eff45b
+    m_Address: Assets/Prefabs/AddressableProps/Tree_Stump.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07fdf586645ccde428c5ceda98f6aca8
+    m_Address: Assets/Prefabs/AddressableProps/Campfire.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e2ecab3f1b02dbb468b241b9803e671a, type: 2}
   m_SchemaSet:
