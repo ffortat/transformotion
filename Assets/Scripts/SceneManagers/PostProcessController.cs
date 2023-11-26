@@ -6,13 +6,10 @@ using UnityEngine.Rendering.Universal;
 
 public class PostProcessController : MonoBehaviour
 {
-    [SerializeField] VolumeProfile profile;
+    [SerializeField] Volume volume;
 
     public void ApplyProfile(PostProcessReaction reaction)
     {
-        ColorAdjustments colorAdjustments;
-        profile.TryGet<ColorAdjustments>(out colorAdjustments);
-
-        colorAdjustments.saturation.value = reaction.saturationValue;
+        volume.profile = reaction.profile;
     }
 }
