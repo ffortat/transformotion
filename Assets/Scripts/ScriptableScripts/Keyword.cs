@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.AddressableAssets;
 [CreateAssetMenu(fileName = "Keyword", menuName = "ScriptableObjects/Keyword", order = 1)]
 public class Keyword : ScriptableObject
 {
+    public string keywordName;
     public List<KeywordReaction> keywordReaction;
     public KeywordReaction defaultReaction;
 
@@ -36,5 +38,10 @@ public class Keyword : ScriptableObject
         }
 
         return defaultReaction;
+    }
+
+    internal void UpdateReaction()
+    {
+        throw new NotImplementedException();
     }
 }
