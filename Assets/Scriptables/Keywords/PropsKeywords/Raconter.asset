@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Raconter
   keywordReaction:
   - {fileID: 11400000, guid: 29e5718a9ea43374cb8a6ad65b4649cc, type: 2}
+  - {fileID: 11400000, guid: 4e7cdf1e6b952384d8d695a9d9412053, type: 2}
   defaultReaction: {fileID: 11400000, guid: 29e5718a9ea43374cb8a6ad65b4649cc, type: 2}

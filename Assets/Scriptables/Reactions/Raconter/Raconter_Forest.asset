@@ -9,11 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3d6f7c6dd9afc419dc4dfb60d2f978, type: 3}
-  m_Name: TestLoc 2
+  m_Script: {fileID: 11500000, guid: 13510313d8a5947419b2d39e95e191fb, type: 3}
+  m_Name: Raconter_Forest
   m_EditorClassIdentifier: 
+  context:
+    currentLocation:
+      m_AssetGUID: f0ee6cac293e2c044a41bd3c74040556
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
   propReference:
-    m_AssetGUID: d8a213d5eb8c7b949b41b100c6ae2ea0
+    m_AssetGUID: 554ea445ede0be941a435e00b1ea575d
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

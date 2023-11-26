@@ -15,4 +15,5 @@ MonoBehaviour:
   keywordName: Festoyer
   keywordReaction:
   - {fileID: 11400000, guid: 9f519aed0e20e1947b4974635579bb22, type: 2}
+  - {fileID: 11400000, guid: f2c53b9b92d823346bf7d08e7b8d6ade, type: 2}
   defaultReaction: {fileID: 11400000, guid: 9f519aed0e20e1947b4974635579bb22, type: 2}
